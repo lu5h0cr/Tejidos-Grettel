@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yelin Boutique | Bolsos tejidos</title>
+  <meta name="description" content="Yelin Boutique: bolsos tejidos artesanales, elegantes y femeninos para resaltar tu estilo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="hero">
+    <nav class="navbar">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de Yelin Boutique">
+        <span class="brand-mark">YB</span>
+        <span>Yelin Boutique</span>
+      </a>
+      <div class="nav-links" aria-label="Navegación principal">
+        <a href="#coleccion">Colección</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+
+    <section id="inicio" class="hero-content">
+      <div class="hero-text">
+        <p class="eyebrow">Bolsos tejidos con encanto</p>
+        <h1>Elegancia artesanal para llevar tu estilo con dulzura.</h1>
+        <p class="hero-description">
+          Descubrí bolsos femeninos, delicados y llenos de personalidad. Cada diseño combina textura, color y detalles dorados para acompañarte en momentos especiales o en tu día a día.
+        </p>
+        <a class="primary-button" href="#coleccion">Ver colección</a>
+      </div>
+
+      <div class="hero-card" aria-label="Bolso destacado de Yelin Boutique">
+        <img src="assets/img/bolso-rosa-malva.png" alt="Bolso tejido rosa malva con herrajes dorados" />
+        <div class="hero-card-label">
+          <span>Nuevo favorito</span>
+          <strong>Rosa Malva</strong>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro-section">
+      <p>
+        En <strong>Yelin Boutique</strong> creemos que un bolso no solo guarda tus cosas: también cuenta tu estilo. Por eso elegimos diseños tejidos, suaves, románticos y modernos, perfectos para regalar o consentirte.
+      </p>
+    </section>
+
+    <section id="coleccion" class="products-section">
+      <div class="section-heading">
+        <p class="eyebrow">Colección destacada</p>
+        <h2>Bolsos disponibles</h2>
+        <p>Tocá una imagen para verla ampliada con su descripción.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" tabindex="0" role="button" aria-label="Ver Bolso Rosa Malva" data-title="Bolso Rosa Malva" data-img="assets/img/bolso-rosa-malva.png" data-description="Un bolso tejido de presencia elegante y romántica, en tono rosa malva con textura gruesa, asa superior, cadena dorada y un hermoso detalle tipo flecos. Ideal para salidas especiales, cenas, eventos o para darle un toque delicado a un look casual.">
+          <img src="assets/img/bolso-rosa-malva.png" alt="Bolso tejido rosa malva con cadena dorada y flecos" />
+          <div class="product-info">
+            <h3>Bolso Rosa Malva</h3>
+            <p>Romántico, elegante y con detalles dorados.</p>
+          </div>
+        </article>
+
+        <article class="product-card" tabindex="0" role="button" aria-label="Ver Bolso Vino Encanto" data-title="Bolso Vino Encanto" data-img="assets/img/bolso-vino.png" data-description="Un diseño tejido en tono vino intenso, con solapa trenzada, asa superior y cierre dorado. Su color profundo lo convierte en una pieza llamativa, perfecta para combinar con outfits neutros, negros, beige o tonos tierra.">
+          <img src="assets/img/bolso-vino.png" alt="Bolso tejido color vino con asa y cierre dorado" />
+          <div class="product-info">
+            <h3>Bolso Vino Encanto</h3>
+            <p>Un tono fuerte, femenino y muy sofisticado.</p>
+          </div>
+        </article>
+
+        <article class="product-card" tabindex="0" role="button" aria-label="Ver Bolso Rosa Dulce" data-title="Bolso Rosa Dulce" data-img="assets/img/bolso-rosa-claro.jpg" data-description="Bolso tejido en rosa claro con silueta suave, asa redondeada, herrajes dorados y borla decorativa. Es una opción coqueta, fresca y delicada para looks femeninos, salidas de día, brunch, paseos o regalos especiales.">
+          <img src="assets/img/bolso-rosa-claro.jpg" alt="Bolso tejido rosa claro con borla decorativa" />
+          <div class="product-info">
+            <h3>Bolso Rosa Dulce</h3>
+            <p>Suave, delicado y perfecto para todos los días.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div>
+        <p class="eyebrow">Pedidos y consultas</p>
+        <h2>¿Te gustó alguno?</h2>
+        <p>Consultá disponibilidad, colores y precios por WhatsApp o redes sociales.</p>
+      </div>
+      <a class="whatsapp-button" href="https://wa.me/50600000000?text=Hola%20Yelin%20Boutique%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20bolsos" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Yelin Boutique. Bolsos tejidos con amor.</p>
+  </footer>
+
+  <div class="modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Cerrar ventana" data-close-modal>×</button>
+      <img id="modalImg" src="" alt="" />
+      <div class="modal-text">
+        <p class="eyebrow">Yelin Boutique</p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a id="modalWhatsapp" class="primary-button" href="#" target="_blank" rel="noopener">Consultar este bolso</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
